@@ -1,0 +1,41 @@
+
+.poto-category {
+	color: $dusty-gray;
+	font-size: 18px;
+	span {
+        margin: 0 5px;
+    }
+}
+
+
+//color
+.bg-white {
+	background-color: $white;
+}
+.t-center {
+	text-align: center;
+}
+.t-left {
+	text-align: left;
+}
+.t-right {
+	text-align: right;
+}
+.t-white {
+	color: $white;
+}
+.t-dove {
+	color: $dove-gray;
+}
+.t-dusty {
+	color: $dusty-gray;
+}
+.t-main-dark {
+	color: $main-dark;
+}
+.t-nd-dark {
+	color: $nd-dark;
+}
+.t-upper {
+	text-transform: uppercase;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "3dcm",
+  "version": "1.0.0",
+  "author": "vunguyen",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-twig": "^1.2.0",
+    "node-sass": "^4.11.0"
+  },
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "dependencies": {
+    "scrollmagic": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vunguyen1101/3dcm.git"
+  },
+  "license": "ISC"
+}

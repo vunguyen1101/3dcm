@@ -1,0 +1,26 @@
+header {
+    background-color: $main-dark;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: $silver;
+
+    // header logo
+    &__logo {
+        font-size: 35px;
+        
+    }
+
+}
+header nav {
+    a {
+        padding: 0 15px;
+    }
+    ul li {
+        display: inline-block;
+    }
+}

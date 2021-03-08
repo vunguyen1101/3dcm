@@ -1,0 +1,41 @@
+
+hr {
+  height: 1px;
+  margin-bottom: 1.5rem;
+  border: 0;
+  background-color: $border;
+}
+
+img{
+  object-fit: cover;
+  max-width: 100%;
+  vertical-align: middle;
+  transition: 0.3s all ease-out;
+}
+.fit-img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.loader-spin {
+  width:45px;
+  height:45px;
+  display:inline-block;
+  padding:0px;
+  border-radius:100%;
+  border-top:5px solid $main-dark;
+  border-bottom:5px solid rgba($color: $dusty-gray, $alpha: 0.6);
+  border-left: 5px solid $main-dark;
+  border-right:5px solid rgba($color: $dusty-gray, $alpha: 0.6);
+  -webkit-animation: loaderspin  1s ease-in-out infinite;
+  animation: loaderspin 1s ease-in-out infinite;
+}
+@keyframes loaderspin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@-webkit-keyframes loaderspin {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}
