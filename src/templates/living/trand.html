@@ -1,0 +1,27 @@
+{% set trandItems = [
+
+    {
+        'src':'assets/images/living/trand/LIV099.jpg',
+        'alt':'LIV099'
+    },
+    {
+        'src':'assets/images/living/trand/LIV100.jpg',
+        'alt':'LIV100'
+    },
+    {
+        'src':'assets/images/living/trand/LIV101.jpg',
+        'alt':'LIV101'
+    },
+]%}
+
+
+{% for item in trandItems %} 
+    <div class="{{GridCol}} trand">
+        <a href="#" class="thumbnail">
+            <img src="{{item.src}}" alt="{{item.alt}}">
+            <span class="thumb-tag">{{item.alt}}</span>
+        </a>
+    </div>
+{% endfor %}
+
+

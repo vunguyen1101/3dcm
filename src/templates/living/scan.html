@@ -1,0 +1,94 @@
+{% set scanItems = [
+    {
+        'src':'assets/images/living/scan/LIV076.jpg',
+        'alt':'LIV076'
+    },
+    {
+        'src':'assets/images/living/scan/LIV077.jpg',
+        'alt':'LIV077'
+    },
+    {
+        'src':'assets/images/living/scan/LIV078.jpg',
+        'alt':'LIV078'
+    },
+    {
+        'src':'assets/images/living/scan/LIV079.jpg',
+        'alt':'LIV079'
+    },
+    {
+        'src':'assets/images/living/scan/LIV080.jpg',
+        'alt':'LIV080'
+    },
+    {
+        'src':'assets/images/living/scan/LIV081.jpg',
+        'alt':'LIV081'
+    },
+    {
+        'src':'assets/images/living/scan/LIV082.jpg',
+        'alt':'LIV082'
+    },
+    {
+        'src':'assets/images/living/scan/LIV083.jpg',
+        'alt':'LIV083'
+    },
+    {
+        'src':'assets/images/living/scan/LIV084.jpg',
+        'alt':'LIV084'
+    },
+    {
+        'src':'assets/images/living/scan/LIV085.jpg',
+        'alt':'LIV085'
+    },
+    {
+        'src':'assets/images/living/scan/LIV086.jpg',
+        'alt':'LIV086'
+    },
+    {
+        'src':'assets/images/living/scan/LIV087.jpg',
+        'alt':'LIV087'
+    },
+    {
+        'src':'assets/images/living/scan/LIV088.jpg',
+        'alt':'LIV088'
+    },
+    {
+        'src':'assets/images/living/scan/LIV089.jpg',
+        'alt':'LIV089'
+    },
+    {
+        'src':'assets/images/living/scan/LIV090.jpg',
+        'alt':'LIV090'
+    },
+    {
+        'src':'assets/images/living/scan/LIV091.jpg',
+        'alt':'LIV091'
+    },
+    {
+        'src':'assets/images/living/scan/LIV092.jpg',
+        'alt':'LIV091'
+    },
+    {
+        'src':'assets/images/living/scan/LIV093.jpg',
+        'alt':'LIV093'
+    },
+    {
+        'src':'assets/images/living/scan/LIV094.jpg',
+        'alt':'LIV094'
+    },
+    {
+        'src':'assets/images/living/scan/LIV119.jpg',
+        'alt':'LIV119'
+    },
+]%}
+
+
+{% for item in scanItems %} 
+    <div class="{{GridCol}} scan">
+        <a href="#" class="thumbnail">
+            <img src="{{item.src}}" alt="{{item.alt}}">
+            <span class="thumb-tag">{{item.alt}}</span>
+        </a>
+    </div>
+{% endfor %}
+
+
