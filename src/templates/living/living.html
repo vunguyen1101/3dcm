@@ -1,0 +1,682 @@
+{% set livingItems = [
+    {
+        'src':'assets/images/living/modern/LIV001.jpg',
+        'alt':'LIV001',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV002.jpg',
+        'alt':'LIV002',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV003.jpg',
+        'alt':'LIV003',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV004.jpg',
+        'alt':'LIV004',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV005.jpg',
+        'alt':'LIV005',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV006.jpg',
+        'alt':'LIV006',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV007.jpg',
+        'alt':'LIV007',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV008.jpg',
+        'alt':'LIV008',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV009.jpg',
+        'alt':'LIV009',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV010.jpg',
+        'alt':'LIV010',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV011.jpg',
+        'alt':'LIV011',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV012.jpg',
+        'alt':'LIV012',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/modern/LIV013.jpg',
+        'alt':'LIV013',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/trand/LIV014.jpg',
+        'alt':'LIV014',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV015.jpg',
+        'alt':'LIV015',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV016.jpg',
+        'alt':'LIV016',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV017.jpg',
+        'alt':'LIV017',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV018.jpg',
+        'alt':'LIV018',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV019.jpg',
+        'alt':'LIV019',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV020.jpg',
+        'alt':'LIV020',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV021.jpg',
+        'alt':'LIV021',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV022.jpg',
+        'alt':'LIV022',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/contem/LIV023.jpg',
+        'alt':'LIV023',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV024.jpg',
+        'alt':'LIV024',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV025.jpg',
+        'alt':'LIV025',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV026.jpg',
+        'alt':'LIV026',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV027.jpg',
+        'alt':'LIV027',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV028.jpg',
+        'alt':'LIV028',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV029.jpg',
+        'alt':'LIV029',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV030.jpg',
+        'alt':'LIV030',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV031.jpg',
+        'alt':'LIV031',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV032.jpg',
+        'alt':'LIV032',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV033.jpg',
+        'alt':'LIV033',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV034.jpg',
+        'alt':'LIV034',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV035.jpg',
+        'alt':'LIV035',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV036.jpg',
+        'alt':'LIV036',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV037.jpg',
+        'alt':'LIV037',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV038.jpg',
+        'alt':'LIV038',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/modern/LIV039.jpg',
+        'alt':'LIV039',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/contem/LIV040.jpg',
+        'alt':'LIV040',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV041.jpg',
+        'alt':'LIV041',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV042.jpg',
+        'alt':'LIV042',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV043.jpg',
+        'alt':'LIV043',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV044.jpg',
+        'alt':'LIV044',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV045.jpg',
+        'alt':'LIV045',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV046.jpg',
+        'alt':'LIV046',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV047.jpg',
+        'alt':'LIV047',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV048.jpg',
+        'alt':'LIV048',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV049.jpg',
+        'alt':'LIV049',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV050.jpg',
+        'alt':'LIV050',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV051.jpg',
+        'alt':'LIV051',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV052.jpg',
+        'alt':'LIV052',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV053.jpg',
+        'alt':'LIV053',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV054.jpg',
+        'alt':'LIV054',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV055.jpg',
+        'alt':'LIV055',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV056.jpg',
+        'alt':'LIV056',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/contem/LIV057.jpg',
+        'alt':'LIV057',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/modern/LIV058.jpg',
+        'alt':'LIV058',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/contem/LIV059.jpg',
+        'alt':'LIV059',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/living/farm/LIV060.jpg',
+        'alt':'LIV060',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV061.jpg',
+        'alt':'LIV061',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV062.jpg',
+        'alt':'LIV062',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV063.jpg',
+        'alt':'LIV063',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV064.jpg',
+        'alt':'LIV064',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/modern/LIV065.jpg',
+        'alt':'LIV065',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/farm/LIV066.jpg',
+        'alt':'LIV066',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV067.jpg',
+        'alt':'LIV067',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV068.jpg',
+        'alt':'LIV068',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV069.jpg',
+        'alt':'LIV069',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV070.jpg',
+        'alt':'LIV070',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV071.jpg',
+        'alt':'LIV071',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV072.jpg',
+        'alt':'LIV072',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV073.jpg',
+        'alt':'LIV073',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV074.jpg',
+        'alt':'LIV074',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/farm/LIV075.jpg',
+        'alt':'LIV075',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/scan/LIV076.jpg',
+        'alt':'LIV076',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV077.jpg',
+        'alt':'LIV077',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV078.jpg',
+        'alt':'LIV078',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV079.jpg',
+        'alt':'LIV079',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV080.jpg',
+        'alt':'LIV080',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV081.jpg',
+        'alt':'LIV081',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV082.jpg',
+        'alt':'LIV082',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV083.jpg',
+        'alt':'LIV083',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV084.jpg',
+        'alt':'LIV084',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV085.jpg',
+        'alt':'LIV085',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV086.jpg',
+        'alt':'LIV086',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV087.jpg',
+        'alt':'LIV087',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV088.jpg',
+        'alt':'LIV088',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV089.jpg',
+        'alt':'LIV089',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV090.jpg',
+        'alt':'LIV090',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV091.jpg',
+        'alt':'LIV091',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV092.jpg',
+        'alt':'LIV092',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV093.jpg',
+        'alt':'LIV093',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/scan/LIV094.jpg',
+        'alt':'LIV094',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/urban/LIV095.jpg',
+        'alt':'LIV095',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV096.jpg',
+        'alt':'LIV096',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV097.jpg',
+        'alt':'LIV097',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV098.jpg',
+        'alt':'LIV098',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/trand/LIV099.jpg',
+        'alt':'LIV099',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV100.jpg',
+        'alt':'LIV100',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/trand/LIV101.jpg',
+        'alt':'LIV101',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV102.jpg',
+        'alt':'LIV102',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV103.jpg',
+        'alt':'LIV103',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV104.jpg',
+        'alt':'LIV104',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV105.jpg',
+        'alt':'LIV105',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV106.jpg',
+        'alt':'LIV106',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV107.jpg',
+        'alt':'LIV107',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV108.jpg',
+        'alt':'LIV108',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV109.jpg',
+        'alt':'LIV109',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV110.jpg',
+        'alt':'LIV110',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV111.jpg',
+        'alt':'LIV111',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV112.jpg',
+        'alt':'LIV112',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV113.jpg',
+        'alt':'LIV113',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV114.jpg',
+        'alt':'LIV114',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV115.jpg',
+        'alt':'LIV115',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV116.jpg',
+        'alt':'LIV116',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV117.jpg',
+        'alt':'LIV117',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/modern/LIV118.jpg',
+        'alt':'LIV118',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/scan/LIV119.jpg',
+        'alt':'LIV119',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/living/modern/LIV120.jpg',
+        'alt':'LIV120',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/living/farm/LIV121.jpg',
+        'alt':'LIV121',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/hampton/LIV122.jpg',
+        'alt':'LIV122',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/living/farm/LIV123.jpg',
+        'alt':'LIV123',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/living/urban/LIV124.jpg',
+        'alt':'LIV124',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV125.jpg',
+        'alt':'LIV125',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV126.jpg',
+        'alt':'LIV126',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV127.jpg',
+        'alt':'LIV127',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV128.jpg',
+        'alt':'LIV128',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV129.jpg',
+        'alt':'LIV129',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV130.jpg',
+        'alt':'LIV130',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV131.jpg',
+        'alt':'LIV131',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV132.jpg',
+        'alt':'LIV132',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/living/urban/LIV133.jpg',
+        'alt':'LIV133',
+        'feature': 'urban'
+    },
+]%}
+
+
+<!-- content living area -->
+<div class="extra-container">
+    <div class="row grid-layout">
+    {% for item in livingItems %} 
+        <div class="{{GridCol}} grid-item {{item.feature}}">
+            <a href="#" class="thumbnail">
+                <img src="{{item.src}}" alt="{{item.alt}}">
+                <span class="thumb-tag">{{item.alt}}</span>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,12 @@
+.filter-tags span {
+    display: inline-block;
+    border: 1px solid $main-dark;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    &:hover {
+        background-color: $main-dark;
+        color: $white;
+        transition: all 0.3 ease;
+    }
+}

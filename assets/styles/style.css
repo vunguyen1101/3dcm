@@ -2336,6 +2336,20 @@ header nav ul li {
   display: block;
 }
 
+.filter-tags span {
+  display: inline-block;
+  border: 1px solid #000000;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.filter-tags span:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.3 ease;
+}
+
 /*--------------------------------------------------------------
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
