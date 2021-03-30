@@ -672,10 +672,8 @@
     <div class="row grid-layout">
     {% for item in livingItems %} 
         <div class="{{GridCol}} grid-item {{item.feature}}">
-            <a href="#" class="thumbnail">
-                <img src="{{item.src}}" alt="{{item.alt}}">
-                <span class="thumb-tag">{{item.alt}}</span>
-            </a>
+            <img src="{{item.src}}" alt="{{item.alt}}">
+            <span class="thumb-tag">{{item.alt}}</span>
         </div>
     {% endfor %}
     </div>
