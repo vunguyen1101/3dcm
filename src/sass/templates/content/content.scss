@@ -1,3 +1,4 @@
+// Grid Item style
 .thumbnail {
     border-radius: 4px;
     display: block;
@@ -13,18 +14,9 @@
 }
 
 
-.portfolio-5__item {
-    width: 12.5%;
-    &--l {
-        width: 25%;
-    }
-}
-// .portfolio-5-image-detail {
-//     position: fixed;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1000;
-// }
+
+
+// grid layout style
 .gallery-slider {
     display: none;
 }
@@ -45,11 +37,24 @@
         @include Center();
         img {
             height: 100%;
-            max-height: 1080px;
         }
     }
 }
 .gallery-slider__close {
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
     position: absolute;
     z-index: 2;
+}
+.slide-img-title {
+    position: absolute;
+    z-index: 1001;
+    top: 80px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    @media (max-width:$xl) {
+        top: 5%;
+    }
+
 }

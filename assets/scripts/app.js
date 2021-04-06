@@ -25,6 +25,7 @@ $(document).ready(function(){
       $('.gallery-slider-content .swiper-wrapper').append(
           '<div class="swiper-slide gallery-slider__item">'+
             '<img class="swiper-lazy" data-src="' + $(this).find('img').attr('src') + '">'+
+            '<span class="slide-img-title">' + $(this).find('img').attr('alt') + '</span>'+
             '<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>'+
           '</div>'
         );
@@ -32,7 +33,12 @@ $(document).ready(function(){
     var portfolio5 = new Swiper('.gallery-slider-content', {
       slidesPerView: 1,
       initialSlide:current,
-      lazy:true
+      mousewheel: true,
+      lazy:true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
     $('.gallery-slider__close').on('click',function(){
       $('.gallery-slider').removeClass('gallery-slider-active');
