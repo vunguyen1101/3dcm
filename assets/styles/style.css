@@ -2336,6 +2336,10 @@ header nav ul li {
   display: block;
 }
 
+.grid-item {
+  margin-bottom: 30px;
+}
+
 .gallery-slider {
   display: none;
 }
@@ -2377,10 +2381,6 @@ header nav ul li {
 }
 
 .slide-img-title {
-  position: absolute;
-  z-index: 1001;
-  top: 80px;
-  left: 50%;
   /* IE 9 */
   /* Safari 3-8 */
   transform: translateX(-50%);

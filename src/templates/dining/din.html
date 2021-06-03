@@ -1,0 +1,521 @@
+{% set diningItems = [
+    {
+        'src':'assets/images/dining/contem/DIN001.jpg',
+        'alt':'DIN001',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN002.jpg',
+        'alt':'DIN002',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN003.jpg',
+        'alt':'DIN003',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN004.jpg',
+        'alt':'DIN004',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN005.jpg',
+        'alt':'DIN005',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN006.jpg',
+        'alt':'DIN006',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN007.jpg',
+        'alt':'DIN007',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN008.jpg',
+        'alt':'DIN008',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN009.jpg',
+        'alt':'DIN009',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN010.jpg',
+        'alt':'DIN010',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN011.jpg',
+        'alt':'DIN011',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN012.jpg',
+        'alt':'DIN012',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN013.jpg',
+        'alt':'DIN013',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN014.jpg',
+        'alt':'DIN014',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN015.jpg',
+        'alt':'DIN015',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN016.jpg',
+        'alt':'DIN016',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN017.jpg',
+        'alt':'DIN017',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN018.jpg',
+        'alt':'DIN018',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN019.jpg',
+        'alt':'DIN019',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN020.jpg',
+        'alt':'DIN020',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN021.jpg',
+        'alt':'DIN021',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN022.jpg',
+        'alt':'DIN022',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN023.jpg',
+        'alt':'DIN023',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN024.jpg',
+        'alt':'DIN024',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN025.jpg',
+        'alt':'DIN025',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN026.jpg',
+        'alt':'DIN026',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN027.jpg',
+        'alt':'DIN027',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN028.jpg',
+        'alt':'DIN028',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN029.jpg',
+        'alt':'DIN029',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN030.jpg',
+        'alt':'DIN030',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN031.jpg',
+        'alt':'DIN031',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN032.jpg',
+        'alt':'DIN032',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN033.jpg',
+        'alt':'DIN033',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN034.jpg',
+        'alt':'DIN034',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN035.jpg',
+        'alt':'DIN035',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN036.jpg',
+        'alt':'DIN036',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN037.jpg',
+        'alt':'DIN037',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN038.jpg',
+        'alt':'DIN038',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN039.jpg',
+        'alt':'DIN039',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN040.jpg',
+        'alt':'DIN040',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN041.jpg',
+        'alt':'DIN041',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN042.jpg',
+        'alt':'DIN042',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/hampton/DIN043.jpg',
+        'alt':'DIN043',
+        'feature':'hampton'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN044.jpg',
+        'alt':'DIN044',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/hampton/DIN045.jpg',
+        'alt':'DIN045',
+        'feature':'hampton'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN046.jpg',
+        'alt':'DIN046',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN047.jpg',
+        'alt':'DIN047',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN048.jpg',
+        'alt':'DIN048',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN049.jpg',
+        'alt':'DIN049',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/farm/DIN050.jpg',
+        'alt':'DIN050',
+        'feature':'farm'
+    },
+    {
+        'src':'assets/images/dining/hampton/DIN051.jpg',
+        'alt':'DIN051',
+        'feature':'hampton'
+    },
+    {
+        'src':'assets/images/dining/hampton/DIN052.jpg',
+        'alt':'DIN052',
+        'feature':'hampton'
+    },
+    {
+        'src':'assets/images/dining/hampton/DIN053.jpg',
+        'alt':'DIN053',
+        'feature':'hampton'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN054.jpg',
+        'alt':'DIN054',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN055.jpg',
+        'alt':'DIN055',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN056.jpg',
+        'alt':'DIN056',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN057.jpg',
+        'alt':'DIN057',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN058.jpg',
+        'alt':'DIN058',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN059.jpg',
+        'alt':'DIN059',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN060.jpg',
+        'alt':'DIN060',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN061.jpg',
+        'alt':'DIN061',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN062.jpg',
+        'alt':'DIN062',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN063.jpg',
+        'alt':'DIN063',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN064.jpg',
+        'alt':'DIN064',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN065.jpg',
+        'alt':'DIN065',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN066.jpg',
+        'alt':'DIN066',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN067.jpg',
+        'alt':'DIN067',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/modern/DIN068.jpg',
+        'alt':'DIN068',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN069.jpg',
+        'alt':'DIN069',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/contem/DIN070.jpg',
+        'alt':'DIN070',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN071.jpg',
+        'alt':'DIN071',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN072.jpg',
+        'alt':'DIN072',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN073.jpg',
+        'alt':'DIN073',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN074.jpg',
+        'alt':'DIN074',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN075.jpg',
+        'alt':'DIN075',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN076.jpg',
+        'alt':'DIN076',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN077.jpg',
+        'alt':'DIN077',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN078.jpg',
+        'alt':'DIN078',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN079.jpg',
+        'alt':'DIN079',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN080.jpg',
+        'alt':'DIN080',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/trand/DIN081.jpg',
+        'alt':'DIN081',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN082.jpg',
+        'alt':'DIN082',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN083.jpg',
+        'alt':'DIN083',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN084.jpg',
+        'alt':'DIN084',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN085.jpg',
+        'alt':'DIN085',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN086.jpg',
+        'alt':'DIN086',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN087.jpg',
+        'alt':'DIN087',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN088.jpg',
+        'alt':'DIN088',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN089.jpg',
+        'alt':'DIN089',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN090.jpg',
+        'alt':'DIN090',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN091.jpg',
+        'alt':'DIN091',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN092.jpg',
+        'alt':'DIN092',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/scan/DIN093.jpg',
+        'alt':'DIN093',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/dining/urban/DIN094.jpg',
+        'alt':'DIN094',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/dining/urban/DIN095.jpg',
+        'alt':'DIN095',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/dining/urban/DIN096.jpg',
+        'alt':'DIN096',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/dining/urban/DIN097.jpg',
+        'alt':'DIN097',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/dining/urban/DIN098.jpg',
+        'alt':'DIN098',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/dining/urban/DIN099.jpg',
+        'alt':'DIN099',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/dining/urban/DIN100.jpg',
+        'alt':'DIN100',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/dining/urban/DIN101.jpg',
+        'alt':'DIN101',
+        'feature': 'urban'
+    },
+
+]%}
+
+
+<!-- content dining area -->
+<div class="extra-container">
+    <div class="row grid-layout">
+    {% for item in diningItems %} 
+        <div class="{{GridCol}} grid-item {{item.feature}}">
+            <img src="{{item.src}}" alt="{{item.alt}}">
+            <span class="thumb-tag">{{item.alt}}</span>
+        </div>
+    {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,761 @@
+{% set bedItems = [
+    {
+        'src':'assets/images/bed/modern/BED001.jpg',
+        'alt':'BED001',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED002.jpg',
+        'alt':'BED002',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED003.jpg',
+        'alt':'BED003',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED004.jpg',
+        'alt':'BED004',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED005.jpg',
+        'alt':'BED005',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED006.jpg',
+        'alt':'BED006',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED007.jpg',
+        'alt':'BED007',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED008.jpg',
+        'alt':'BED008',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED009.jpg',
+        'alt':'BED009',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED010.jpg',
+        'alt':'BED010',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED011.jpg',
+        'alt':'BED011',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED012.jpg',
+        'alt':'BED012',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED013.jpg',
+        'alt':'BED013',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED014.jpg',
+        'alt':'BED014',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED015.jpg',
+        'alt':'BED015',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED016.jpg',
+        'alt':'BED016',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED017.jpg',
+        'alt':'BED017',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED018.jpg',
+        'alt':'BED018',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED019.jpg',
+        'alt':'BED019',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED020.jpg',
+        'alt':'BED020',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED021.jpg',
+        'alt':'BED021',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED022.jpg',
+        'alt':'BED022',
+        'feature': 'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED023.jpg',
+        'alt':'BED023',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED024.jpg',
+        'alt':'BED024',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED025.jpg',
+        'alt':'BED025',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED026.jpg',
+        'alt':'BED026',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED027.jpg',
+        'alt':'BED027',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED028.jpg',
+        'alt':'BED028',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED029.jpg',
+        'alt':'BED029',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED030.jpg',
+        'alt':'BED030',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED031.jpg',
+        'alt':'BED031',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED032.jpg',
+        'alt':'BED032',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/modern/BED033.jpg',
+        'alt':'BED033',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/contem/BED034.jpg',
+        'alt':'BED034',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED035.jpg',
+        'alt':'BED035',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED036.jpg',
+        'alt':'BED036',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED037.jpg',
+        'alt':'BED037',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED038.jpg',
+        'alt':'BED038',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED039.jpg',
+        'alt':'BED039',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/trand/BED040.jpg',
+        'alt':'BED040',
+        'feature':'trand'
+    },
+    {
+        'src':'assets/images/bed/modern/BED041.jpg',
+        'alt':'BED041',
+        'feature':'modern'
+    },
+    {
+        'src':'assets/images/bed/contem/BED042.jpg',
+        'alt':'BED042',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED043.jpg',
+        'alt':'BED043',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED044.jpg',
+        'alt':'BED044',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED045.jpg',
+        'alt':'BED045',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED046.jpg',
+        'alt':'BED046',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED047.jpg',
+        'alt':'BED047',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED048.jpg',
+        'alt':'BED048',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED049.jpg',
+        'alt':'BED049',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED050.jpg',
+        'alt':'BED050',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED051.jpg',
+        'alt':'BED051',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED052.jpg',
+        'alt':'BED052',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED053.jpg',
+        'alt':'BED053',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED054.jpg',
+        'alt':'BED054',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED055.jpg',
+        'alt':'BED055',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED056.jpg',
+        'alt':'BED056',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED057.jpg',
+        'alt':'BED057',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED058.jpg',
+        'alt':'BED058',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED059.jpg',
+        'alt':'BED059',
+        'feature':'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED060.jpg',
+        'alt':'BED060',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED061.jpg',
+        'alt':'BED061',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED062.jpg',
+        'alt':'BED062',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED063.jpg',
+        'alt':'BED063',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED064.jpg',
+        'alt':'BED064',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED065.jpg',
+        'alt':'BED065',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED066.jpg',
+        'alt':'BED066',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED067.jpg',
+        'alt':'BED067',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/contem/BED068.jpg',
+        'alt':'BED068',
+        'feature': 'contem'
+    },
+    {
+        'src':'assets/images/bed/trand/BED069.jpg',
+        'alt':'BED069',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED070.jpg',
+        'alt':'BED070',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED071.jpg',
+        'alt':'BED071',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED072.jpg',
+        'alt':'BED072',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED073.jpg',
+        'alt':'BED073',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED074.jpg',
+        'alt':'BED074',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED075.jpg',
+        'alt':'BED075',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED076.jpg',
+        'alt':'BED076',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED077.jpg',
+        'alt':'BED077',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED078.jpg',
+        'alt':'BED078',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED079.jpg',
+        'alt':'BED079',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED080.jpg',
+        'alt':'BED080',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED081.jpg',
+        'alt':'BED081',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/trand/BED082.jpg',
+        'alt':'BED082',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/scan/BED083.jpg',
+        'alt':'BED083',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED084.jpg',
+        'alt':'BED084',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED085.jpg',
+        'alt':'BED085',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED086.jpg',
+        'alt':'BED086',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED087.jpg',
+        'alt':'BED087',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED088.jpg',
+        'alt':'BED088',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED089.jpg',
+        'alt':'BED089',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED090.jpg',
+        'alt':'BED090',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED091.jpg',
+        'alt':'BED091',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED092.jpg',
+        'alt':'BED092',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED093.jpg',
+        'alt':'BED093',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED094.jpg',
+        'alt':'BED094',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED095.jpg',
+        'alt':'BED095',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/scan/BED096.jpg',
+        'alt':'BED096',
+        'feature': 'scan'
+    },
+    {
+        'src':'assets/images/bed/urban/BED097.jpg',
+        'alt':'BED097',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED098.jpg',
+        'alt':'BED098',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED099.jpg',
+        'alt':'BED099',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED100.jpg',
+        'alt':'BED100',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED101.jpg',
+        'alt':'BED101',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED102.jpg',
+        'alt':'BED102',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED103.jpg',
+        'alt':'BED103',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED104.jpg',
+        'alt':'BED104',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED105.jpg',
+        'alt':'BED105',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED106.jpg',
+        'alt':'BED106',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED107.jpg',
+        'alt':'BED107',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/farm/BED108.jpg',
+        'alt':'BED108',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED109.jpg',
+        'alt':'BED109',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED110.jpg',
+        'alt':'BED110',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED111.jpg',
+        'alt':'BED111',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED112.jpg',
+        'alt':'BED112',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED113.jpg',
+        'alt':'BED113',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED114.jpg',
+        'alt':'BED114',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED115.jpg',
+        'alt':'BED115',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED116.jpg',
+        'alt':'BED116',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED117.jpg',
+        'alt':'BED117',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED118.jpg',
+        'alt':'BED118',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED119.jpg',
+        'alt':'BED119',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED120.jpg',
+        'alt':'BED120',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED121.jpg',
+        'alt':'BED121',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED122.jpg',
+        'alt':'BED122',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED123.jpg',
+        'alt':'BED123',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED124.jpg',
+        'alt':'BED124',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED125.jpg',
+        'alt':'BED125',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED126.jpg',
+        'alt':'BED126',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED127.jpg',
+        'alt':'BED127',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED128.jpg',
+        'alt':'BED128',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED129.jpg',
+        'alt':'BED129',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED130.jpg',
+        'alt':'BED130',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED131.jpg',
+        'alt':'BED131',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED132.jpg',
+        'alt':'BED132',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED133.jpg',
+        'alt':'BED133',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED134.jpg',
+        'alt':'BED134',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/trand/BED135.jpg',
+        'alt':'BED135',
+        'feature': 'trand'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED136.jpg',
+        'alt':'BED136',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED137.jpg',
+        'alt':'BED137',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED138.jpg',
+        'alt':'BED138',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/hampton/BED139.jpg',
+        'alt':'BED139',
+        'feature': 'hampton'
+    },
+    {
+        'src':'assets/images/bed/farm/BED141.jpg',
+        'alt':'BED140',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED141.jpg',
+        'alt':'BED140',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED151.jpg',
+        'alt':'BED151',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED153.jpg',
+        'alt':'BED153',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/farm/BED154.jpg',
+        'alt':'BED154',
+        'feature': 'farm'
+    },
+    {
+        'src':'assets/images/bed/urban/BED155.jpg',
+        'alt':'BED155',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED156.jpg',
+        'alt':'BED156',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED157.jpg',
+        'alt':'BED157',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED158.jpg',
+        'alt':'BED158',
+        'feature': 'urban'
+    },
+    {
+        'src':'assets/images/bed/urban/BED159.jpg',
+        'alt':'BED159',
+        'feature': 'urban'
+    },
+
+]%}
+
+
+<!-- content bed area -->
+<div class="extra-container">
+    <div class="row grid-layout">
+    {% for item in bedItems %} 
+        <div class="{{GridCol}} grid-item {{item.feature}}">
+            <img src="{{item.src}}" alt="{{item.alt}}">
+            <span class="thumb-tag">{{item.alt}}</span>
+        </div>
+    {% endfor %}
+    </div>
+</div>
