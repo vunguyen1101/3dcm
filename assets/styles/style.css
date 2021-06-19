@@ -2315,6 +2315,7 @@ header {
 
 header nav a {
   padding: 0 15px;
+  text-transform: uppercase;
 }
 
 header nav ul li {

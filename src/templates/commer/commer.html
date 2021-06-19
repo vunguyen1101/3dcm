@@ -1,0 +1,75 @@
+{% set commerItems = [
+    {
+        'src':'assets/images/commer/COM001.jpg',
+        'alt':'COM001',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM002.jpg',
+        'alt':'COM002',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM003.jpg',
+        'alt':'COM003',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM004.jpg',
+        'alt':'COM004',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM005.jpg',
+        'alt':'COM005',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM006.jpg',
+        'alt':'COM006',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM007.jpg',
+        'alt':'COM007',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM008.jpg',
+        'alt':'COM008',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM009.jpg',
+        'alt':'COM009',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM010.jpg',
+        'alt':'COM010',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM011.jpg',
+        'alt':'COM011',
+        'feature': 'commer'
+    },    
+    {
+        'src':'assets/images/commer/COM012.jpg',
+        'alt':'COM012',
+        'feature': 'commer'
+    },
+]%}
+
+
+<!-- content commer area -->
+<div class="extra-container">
+    <div class="row grid-layout">
+    {% for item in commerItems %} 
+        <div class="{{GridCol}} grid-item {{item.feature}}">
+            <img src="{{item.src}}" alt="{{item.alt}}">
+            <span class="thumb-tag">{{item.alt}}</span>
+        </div>
+    {% endfor %}
+    </div>
+</div>
