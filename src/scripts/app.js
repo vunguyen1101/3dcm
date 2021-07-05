@@ -46,11 +46,15 @@ $(document).ready(function(){
       portfolio5.destroy();
     });
   });
-  
+//------------------------------------- Before and After iamges
+
 
 });
  //=========================== blog mansory===================================
 $(window).on("load", function () {
   // blog:
 
+  $(function(){
+    $("#container1").twentytwenty();
+  });
 });
